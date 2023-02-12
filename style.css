@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor0: #353535;
+    --cor1: #4C8647;
+    --cor2: #8A78E0;
+    --cor3: #2B7FFF;
+    --cor4: #FA4236;
+    --cor5: #F2901C;
+    --cor6: #fbfbfb;
+    --cores: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    padding: 0px 50px;
+    max-width: 1440px;
+    margin: auto;
+    font-family: var(--font);
+
+    background-color: var(--cor6);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--cor6);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(180deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--cor6);
+}
+
+h2 {
+    font-family: var(--font);
+    color: var(--cor0);
+    font-weight: 700;
+    font-size: 3em;
+}
+
+header {
+    padding: 25px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+span.menu {
+    display: block;
+    background: var(--cor0);
+    width: 30px;
+    height: 3px;
+
+    border-radius: 5px;
+}
+
+span.gradiente {
+    background: var(--cores);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+section.bv {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    height: 75vh;
+}
+
+h1.msg-p {
+    font-family: var(--font);
+    color: var(--cor0);
+    font-weight: 700;
+    font-size: 4.5em;
+}
+
+section.venda {
+    background-color: #F2EEEB;
+    height: 80vh;
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+section.venda > h2 {
+    text-align: center;
+}
+
+article.venda1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+p.p-texto {
+    font-family: var(--font);
+    color: var(--cor0);
+    font-size: 1.5em;
+}
+
+section.ganhe {
+    height: 75vh;
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+article.ganhe1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+footer {
+    text-align: center;
+
+    padding: 8px;
+    color: var(--cor6);
+    background: var(--cores);
+    border-radius: 15px 15px 0px 0px;
+}
