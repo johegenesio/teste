@@ -60,7 +60,7 @@ header {
     flex-direction: row;
 }
 
-header > h1 {
+h1.logo {
     font-family: var(--font);
     color: var(--cor0);
     font-weight: 700;
