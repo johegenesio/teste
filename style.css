@@ -47,7 +47,7 @@ h2 {
     font-family: var(--font);
     color: var(--cor0);
     font-weight: 700;
-    font-size: 2.6em;
+    font-size: 2.4em;
 }
 
 header {
@@ -58,6 +58,13 @@ header {
     align-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+header > h1 {
+    font-family: var(--font);
+    color: var(--cor0);
+    font-weight: 700;
+    font-size: 0.8em; 
 }
 
 span.menu {
@@ -90,7 +97,7 @@ h1.msg-p {
     font-family: var(--font);
     color: var(--cor0);
     font-weight: 700;
-    font-size: 4em;
+    font-size: 3.8em;
 }
 
 section.venda {
@@ -122,7 +129,7 @@ article.venda1 {
 p.p-texto {
     font-family: var(--font);
     color: var(--cor0);
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 section.ganhe {
