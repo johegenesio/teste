@@ -10,6 +10,7 @@
     --cor4: #FA4236;
     --cor5: #F2901C;
     --cor6: #fbfbfb;
+    --cor7: #f2eeeb;
     --cores: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
 
     --font: 'Poppins', sans-serif;
@@ -101,7 +102,7 @@ h1.msg-p {
 }
 
 section.venda {
-    background-color: #F2EEEB;
+    background-color: var(--cor7);
     height: 80vh;
 
     border-radius: 15px;
@@ -152,7 +153,6 @@ article.ganhe1 {
     align-items: center;
     flex-direction: row;
 }
-
 
 footer {
     text-align: center;
