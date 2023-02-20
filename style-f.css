@@ -21,13 +21,22 @@
     padding: 0px;
 }
 
-body {
+body.principal {
     padding: 0px 50px;
     max-width: 1440px;
     margin: auto;
     font-family: var(--font);
 
     background-color: var(--cor7);
+}
+
+span.menu {
+    display: block;
+    background: var(--cor0);
+    width: 30px;
+    height: 3px;
+
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar {
@@ -44,7 +53,7 @@ body {
     background-color: var(--cor7);
 }
 
-header {
+header.p {
     padding: 25px 0px;
 
     display: flex;
@@ -69,13 +78,10 @@ h1.logo {
 section.fc-p {
     display: flex;
     justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: row;
 
-    background: transparent url('imgs-f/estrelas-pi.png') center center no-repeat fixed;
+    height: 75vh;
 
-    height: 50vh;
+    padding: 22vh 0vh;
 }
 
 h1.fc-t {
@@ -88,6 +94,15 @@ h1.fc-t {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+section.rs-p {
+    background: var(--cores);
+    border-radius: 15px;
+
+    padding: 50px;
+
+    text-align: center;
 }
 
 h2.rs {
