@@ -22,7 +22,7 @@
 }
 
 body {
-    padding: 0px 50px;
+    padding: 0px 56px;
     max-width: 1440px;
     margin: auto;
     font-family: var(--font);
@@ -37,7 +37,7 @@ body {
 
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(180deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 ::-webkit-scrollbar-track{
@@ -48,11 +48,11 @@ h2 {
     font-family: var(--font);
     color: var(--cor0);
     font-weight: 700;
-    font-size: 2.4em;
+    font-size: 2.8em;
 }
 
 header {
-    padding: 25px 0px;
+    padding: 24px 0px;
 
     display: flex;
     justify-content: space-between;
@@ -65,13 +65,13 @@ h1.logo {
     font-family: var(--font);
     color: var(--cor0);
     font-weight: 700;
-    font-size: 1.3em; 
+    font-size: 1.4em; 
 }
 
 span.menu {
     display: block;
     background: var(--cor0);
-    width: 30px;
+    width: 32px;
     height: 3px;
 
     border-radius: 5px;
@@ -105,14 +105,14 @@ section.venda {
     background-color: var(--cor7);
     height: 80vh;
 
-    border-radius: 15px;
+    border-radius: 16px;
 
     display: flex;
     justify-content: space-around;
     align-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5px;
+    padding: 8px;
 }
 
 section.venda > h2 {
@@ -130,7 +130,7 @@ article.venda1 {
 p.p-texto {
     font-family: var(--font);
     color: var(--cor0);
-    font-size: 1.1em;
+    font-size: 1.4em;
 }
 
 section.ganhe {
@@ -141,7 +141,7 @@ section.ganhe {
     align-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 30px;
+    padding: 32px;
 }
 
 article.ganhe1 {
@@ -152,11 +152,64 @@ article.ganhe1 {
     flex-direction: row;
 }
 
-footer {
+div.r-i {
     text-align: center;
 
-    padding: 4px;
+    padding: 8px;
     color: var(--cor6);
+    font-size: 1.2em;
     background: var(--cores);
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 16px;
+}
+
+div.roda-pe {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.info, div.app {
+    background: var(--cor7);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 40px;
+    width: 50%;
+
+    border-radius: 16px;
+
+    color: var(--cor0);
+}
+
+div.info {
+    margin: 16px 8px 16px 0px;
+}
+
+div.info > div > h3 {
+    font-size: 1.4em;
+}
+
+div.info > div > a {
+    font-size: 1em;
+
+    text-decoration: none;
+    color: var(--cor0);
+
+    margin-top: 8px;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+div.info > div > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div.app {
+    margin: 16px 0px 16px 8px;
+
+    font-size: 1.4em;
+    color: var(--cor0);
 }
