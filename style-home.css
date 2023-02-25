@@ -44,28 +44,15 @@ body {
     background-color: var(--cor6);
 }
 
+/*geral*/
+
 h2 {
     font-family: var(--font);
     color: var(--cor0);
     font-weight: 700;
     font-size: 2.8em;
-}
 
-header {
-    padding: 24px 0px;
-
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-h1.logo {
-    font-family: var(--font);
-    color: var(--cor0);
-    font-weight: 700;
-    font-size: 1.4em; 
+    text-align: center;
 }
 
 span.menu {
@@ -82,6 +69,25 @@ span.gradiente {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/*especificos*/
+
+header {
+    padding: 24px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+h1.logo {
+    font-family: var(--font);
+    color: var(--cor0);
+    font-weight: 700;
+    font-size: 1.4em; 
 }
 
 section.bv {
@@ -115,16 +121,24 @@ section.venda {
     padding: 32px;
 }
 
-section.venda > h2 {
-    text-align: center;
-}
-
 article.venda1 {
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+div.venda-img-div {
+    width: 40%;
+}
+
+img.venda-img {
+    width: 20vw;
+}
+
+div.venda-p {
+    width: 35%;
 }
 
 p.p-texto {
@@ -152,6 +166,22 @@ article.ganhe1 {
     flex-direction: row;
 }
 
+div.ganhe-div {
+    width: 35%;
+}
+
+p.ganhe-p {
+    text-align: end;
+}
+
+div.ganhe-img-div {
+    width: 35%;
+}
+
+img.ganhe-img {
+    width: 33vw;
+}
+
 div.r-i {
     text-align: center;
 
@@ -165,8 +195,14 @@ div.r-i {
 div.roda-pe {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
 
     margin-bottom: 32px;
+}
+
+div.separador {
+    border: 1px solid var(--cor0);
+    height: 100%;
 }
 
 div.info, div.app {
@@ -177,11 +213,13 @@ div.info, div.app {
     align-items: center;
 
     padding: 40px;
-    width: 50%;
+    width: 32.8vw;
 
     border-radius: 16px;
 
     color: var(--cor0);
+
+    /*ver o site da apple (iphone) e ver como colocar o basis, grow e flex outras coisas*/
 }
 
 div.info {
@@ -219,147 +257,219 @@ img.img-app-rp {
     width: 8vw;
 }
 
+/*tablete*/
+
 @media (max-width: 1150px) {
+    h2 {
+        font-size: 2.4em;
+    }
+
     section.bv {
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        align-items: center;
-        flex-direction: row;
-    
-        height: 45vh;
+        height: 40vh;
     }
     
     h1.msg-p {
-        font-family: var(--font);
-        color: var(--cor0);
-        font-weight: 700;
         font-size: 3em;
     }
     
     section.venda {
-        background-color: var(--cor7);
-        height: 45vh;
-    
-        border-radius: 16px;
-    
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 32px;
+        height: 40vh;
     }
 
-    section.venda > h2 {
-        text-align: center;
-        font-size: 2.4em;
-    }
-
-    article.venda1 {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-    
     p.p-texto {
-        font-family: var(--font);
-        color: var(--cor0);
         font-size: 1.2em;
+    }
+
+    div.venda-img-div {
+        width: 40%;
+    }
+    
+    img.venda-img {
+        width: 20vw;
+    }
+    
+    div.venda-p {
+        width: 35%;
     }
     
     section.ganhe {
-        height: 45vh;
+        height: 40vh;
+    }
     
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 32px;
+    div.ganhe-div {
+        width: 35%;
+    }
+    
+    p.ganhe-p {
+        text-align: end;
+    }
+    
+    div.ganhe-img-div {
+        width: 45%;
+    }
+    
+    div.ganhe-img {
+        width: 33vw;
     }
 
-    section.ganhe > h2 {
-        text-align: center;
-        font-size: 2.4em;
-    }
-    
-    article.ganhe1 {
-        display: flex;
-        justify-content: space-evenly;
-        align-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-    
-    div.r-i {
-        text-align: center;
-    
+    div.r-i { 
         padding: 4px;
-        color: var(--cor6);
         font-size: 1em;
-        background: var(--cores);
-        border-radius: 16px;
-    }
-    
-    div.roda-pe {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap-reverse;
-
-        margin-bottom: 32px;
     }
 
     div.info {
         margin: 0px;
 
         font-size: 1.1em;
-        color: var(--cor0);
     }
     
     div.info, div.app {
-        background: var(--cor7);
-    
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    
-        padding: 40px;
         width: 100%;
-    
-        border-radius: 16px;
-    
-        color: var(--cor0);
     }
     
     div.info > div > a {
         font-size: 0.8em;
-    
-        text-decoration: none;
-        color: var(--cor0);
-    
-        margin-top: 8px;
-    
-        display: flex;
-        flex-flow: column wrap;
-    }
-    
-    div.info > div > a:hover {
-        text-decoration: underline;
-        cursor: pointer;
     }
     
     div.app {
         margin: 16px 0px;
     
         font-size: 1.1em;
-        color: var(--cor0);
     }
 
     img.img-app-rp {
         width: 12vw;
+
+        margin-left: 32px;
+    }
+}
+
+/*telefonó*/
+
+@media (max-width: 600px) {
+    body {
+        padding: 0px 16px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    section.bv {
+        height: 50vh;
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    img.img-bv {
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+    
+    h1.msg-p {
+        font-size: 2.4em;
+    }
+    
+    section.venda {
+        height: 80vh;
+        padding: 16px;
+    }
+
+    article.venda1 {
+        flex-flow: column wrap;
+    }
+
+    div.venda-img-div {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 24px;
+    }
+    
+    img.venda-img {
+        width: 50vw;
+    }
+    
+    div.venda-p {
+        width: 100%;
+    }
+
+    p.p-texto {
+        font-size: 0.9em;
+        text-align: center;
+    }
+    
+    section.ganhe {
+        height: 65vh;
+    }
+
+    article.ganhe1 {
+        flex-flow: column-reverse wrap;
+    }
+
+    div.ganhe-div {
+        width: 100%;
+    }
+
+    div.ganhe-img-div {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    img.ganhe-img {
+        width: 70vw;
+
+        margin-bottom: 16px;
+    }
+    
+    
+    div.r-i { 
+        padding: 4px;
+        font-size: 0.8em;
+    }
+
+    div.info {
+        margin: 0px;
+
+        font-size: 1em;
+
+        text-align: center;
+    }
+
+    div.separador {
+        border: 1px solid var(--cor0);
+        width: 80%;
+        height: 0px;
+
+        margin: 16px 0px;
+    }
+    
+    div.info, div.app {
+        width: 100%;
+
+        padding: 16px;
+
+        flex-direction: column;
+    }
+    
+    div.info > div > a {
+        font-size: 0.7em;
+    }
+    
+    div.app {
+        margin: 16px 0px;
+    
+        font-size: 1em;
+    }
+
+    img.img-app-rp {
+        width: 8vw;
 
         margin-left: 32px;
     }
